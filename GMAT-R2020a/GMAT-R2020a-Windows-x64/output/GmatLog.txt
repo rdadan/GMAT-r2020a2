@@ -1,0 +1,13 @@
+GMAT Build Date: Dec 23 2020 15:13:13
+
+GMAT Log file set to D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\output\GmatLog.txt
+Error occurred during initialization: Utility Exception: At least 10 directories do not exist, including:
+TIME_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\time\
+PLANETARY_COEFF_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_coeff\
+PLANETARY_EPHEM_DE_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_ephem\de\
+PLANETARY_EPHEM_SPK_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_ephem\spk\
+VEHICLE_EPHEM_SPK_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\vehicle\ephem\spk\
+VEHICLE_EPHEM_CCSDS_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\vehicle\ephem\ccsds\
+EARTH_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\earth\
+LUNA_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\luna\
+VENUS_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\venus\

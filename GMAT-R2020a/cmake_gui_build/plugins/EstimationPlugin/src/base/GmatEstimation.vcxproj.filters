@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\AngleAdapterDeg.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\AzimuthAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DeclinationAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DopplerAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DSNRangeAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\ElevationAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GNDopplerAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GNRangeAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GPSAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\PointRangeRateAdapterKps.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeAdapterKm.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeRateAdapterKps.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RightAscAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TDRSDopplerAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TDRSRangeAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TrackingDataAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\XEastAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\XSouthAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\YEastAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\YNorthAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeSkinAdapter.cpp">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\command\RunEstimator.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\command\RunSimulator.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\DataFilter.cpp">
+      <Filter>Source Files\datafilter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\AcceptFilter.cpp">
+      <Filter>Source Files\datafilter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\RejectFilter.cpp">
+      <Filter>Source Files\datafilter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\errormodel\ErrorModel.cpp">
+      <Filter>Source Files\errormodel</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\BatchEstimatorBase.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\BatchEstimator.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\EstimationStateManager.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\EstimatorException.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Simulator.cpp">
+      <Filter>Source Files\estimator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EstimationRootFinder.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\Event.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventData.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventException.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventManager.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\DataFileFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ErrorModelFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimationCommandFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimationDataFilterFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimatorFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimatorHardwareFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\MeasurementModelFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\NavPropagatorFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ObTypeFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\SignalModelFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Antenna.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\RFHardware.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Receiver.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Sensor.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Signal.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Transmitter.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Transponder.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementData.cpp">
+      <Filter>Source Files\measurement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementManager.cpp">
+      <Filter>Source Files\measurement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementModelBase.cpp">
+      <Filter>Source Files\measurement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MediaCorrection.cpp">
+      <Filter>Source Files\measurement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Troposphere\Troposphere.cpp">
+      <Filter>Source Files\measurement\Troposphere</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\B3_obtype.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\DataFile.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\DataFileAdapter.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\GmatObType.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\GmatData.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\ObservationData.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\ObType.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\RampTableData.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\RampTableType.cpp">
+      <Filter>Source Files\measurementfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.cpp">
+      <Filter>Source Files\measurementmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.cpp">
+      <Filter>Source Files\measurementmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\plugin\GmatPluginFunctions.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\propagator\RungeKutta4.cpp">
+      <Filter>Source Files\propagator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\reporter\ProgressReporter.cpp">
+      <Filter>Source Files\reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalBase.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalData.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SinglePointSignal.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalDataCache.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmErrorHandler.cpp">
+      <Filter>Source Files\tdmReader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmObType.cpp">
+      <Filter>Source Files\tdmReader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmReadWriter.cpp">
+      <Filter>Source Files\tdmReader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\trackingfile\TFSMagicNumbers.cpp">
+      <Filter>Source Files\trackingfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\trackingfile\TrackingFileSet.cpp">
+      <Filter>Source Files\trackingfile</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp">
+      <Filter>Source Files\measurement\Ionosphere</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c">
+      <Filter>Source Files\measurement\Ionosphere</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\AngleAdapterDeg.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\AzimuthAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DSNRangeAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DeclinationAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\DopplerAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\ElevationAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GNDopplerAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GNRangeAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\GPSAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\PointRangeRateAdapterKps.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeAdapterKm.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeRateAdapterKps.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RangeSkinAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\RightAscAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TDRSDopplerAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TDRSRangeAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TrackingDataAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\XEastAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\XSouthAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\YEastAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\YNorthAdapter.hpp">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\command\RunEstimator.hpp">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\command\RunSimulator.hpp">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\AcceptFilter.hpp">
+      <Filter>Header Files\datafilter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\DataFilter.hpp">
+      <Filter>Header Files\datafilter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\datafilter\RejectFilter.hpp">
+      <Filter>Header Files\datafilter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\errormodel\ErrorModel.hpp">
+      <Filter>Header Files\errormodel</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\BatchEstimator.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\BatchEstimatorBase.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\EstimationStateManager.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\EstimatorException.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Simulator.hpp">
+      <Filter>Header Files\estimator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EstimationRootFinder.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\Event.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventData.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventException.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\event\EventManager.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\DataFileFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ErrorModelFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimationCommandFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimationDataFilterFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimatorFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\EstimatorHardwareFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\MeasurementModelFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\NavPropagatorFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ObTypeFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\SignalModelFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Antenna.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\RFHardware.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Receiver.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Sensor.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Signal.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Transmitter.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\hardware\Transponder.hpp">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\include\estimation_defs.hpp">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\EstimationDefs.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.hpp">
+      <Filter>Header Files\measurement\Ionosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.h">
+      <Filter>Header Files\measurement\Ionosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementData.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementException.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementManager.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MeasurementModelBase.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\MediaCorrection.hpp">
+      <Filter>Header Files\measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Troposphere\Troposphere.hpp">
+      <Filter>Header Files\measurement\Troposphere</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\B3_obtype.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\DataFile.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\DataFileAdapter.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\GmatData.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\GmatObType.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\ObType.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\ObservationData.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\RampTableData.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementfile\RampTableType.hpp">
+      <Filter>Header Files\measurementfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.hpp">
+      <Filter>Header Files\measurementmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.hpp">
+      <Filter>Header Files\measurementmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\plugin\GmatPluginFunctions.hpp">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\propagator\RungeKutta4.hpp">
+      <Filter>Header Files\propagator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\reporter\ProgressReporter.hpp">
+      <Filter>Header Files\reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalBase.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalData.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SignalDataCache.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\SinglePointSignal.hpp">
+      <Filter>Header Files\signal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmErrorHandler.hpp">
+      <Filter>Header Files\tdmReader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmObType.hpp">
+      <Filter>Header Files\tdmReader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmReadWriter.hpp">
+      <Filter>Header Files\tdmReader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\trackingfile\TFSMagicNumbers.hpp">
+      <Filter>Header Files\trackingfile</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\trackingfile\TrackingFileSet.hpp">
+      <Filter>Header Files\trackingfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F575BB39-2F6D-3545-8949-B0FC7E8F7094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\adapter">
+      <UniqueIdentifier>{BA6FF234-0D78-3758-B21F-AA818D8858CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\command">
+      <UniqueIdentifier>{BDC20F94-FCA6-3ED4-B49A-DCCA11D6F3D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\datafilter">
+      <UniqueIdentifier>{FE771009-76B2-319E-8C31-5D38E330D370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\errormodel">
+      <UniqueIdentifier>{6DB790BE-728E-3576-8CD7-84DD9D815BA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\estimator">
+      <UniqueIdentifier>{4ECCBE62-6C17-3958-BE4F-2529CED12A8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\event">
+      <UniqueIdentifier>{C93FFBE7-AAF9-31D8-B01E-CEDF920EFE40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\factory">
+      <UniqueIdentifier>{45ABA8F0-DC5E-30F3-853D-35D219222D72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hardware">
+      <UniqueIdentifier>{F58B569F-C891-3155-874B-E544B78CBD74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{56E9F4D7-950F-3B5B-ABF6-8881DFB68054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\measurement">
+      <UniqueIdentifier>{1FA23460-512A-3127-BDCE-70555B5809BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\measurement\Ionosphere">
+      <UniqueIdentifier>{88B2E79F-01B7-3912-ADB3-702C4604F46D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\measurement\Troposphere">
+      <UniqueIdentifier>{13EC9CCF-E355-3A91-9C4B-D67BE80FEB10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\measurementfile">
+      <UniqueIdentifier>{155E353D-8201-399E-A366-E5A4C041FE62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\measurementmodel">
+      <UniqueIdentifier>{2E004A6D-9A3E-3597-AA82-062ADF383512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{580EA98A-3CA3-3C90-8124-603A46F594EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\propagator">
+      <UniqueIdentifier>{942228B9-A6F5-38FC-829D-08EEEFACAB26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\reporter">
+      <UniqueIdentifier>{18E9D6F6-B554-32E2-83F4-458D1EE8FAF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\signal">
+      <UniqueIdentifier>{D0DCB010-F771-3AD1-BC9E-78469DDAC2A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tdmReader">
+      <UniqueIdentifier>{5464EA8B-A56F-38F3-BEDD-6CB438724529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\trackingfile">
+      <UniqueIdentifier>{93290781-6C89-3286-8883-0421FA4FE7C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754ACB58-DCD0-32E1-9D72-A549EC754539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\adapter">
+      <UniqueIdentifier>{496CCE11-FE13-34D3-868C-6A273FE94B3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{30AFF0EB-B99C-3E07-93FE-9013A8A99D76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\datafilter">
+      <UniqueIdentifier>{20AB3D65-5AB9-340E-ABC4-2B8D0DB27EC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\errormodel">
+      <UniqueIdentifier>{63393485-CC95-3375-9E81-E29B930E16C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\estimator">
+      <UniqueIdentifier>{A93CB8B5-F6CA-3A0B-8051-F7CE85DB7ACE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\event">
+      <UniqueIdentifier>{C3A16AA5-0E9A-3D94-BBCD-BD6DDDC421A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\factory">
+      <UniqueIdentifier>{E1C7D092-2C69-3AB2-B979-74AF6CB62A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hardware">
+      <UniqueIdentifier>{F24C8C10-E354-3C43-863B-34169F42AD96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\measurement">
+      <UniqueIdentifier>{6061E2ED-9357-3BB6-A6ED-04D61C1BCDD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\measurement\Ionosphere">
+      <UniqueIdentifier>{164DF08B-4C9F-397E-B3CB-A2D977490A5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\measurement\Troposphere">
+      <UniqueIdentifier>{E7C99B09-E590-3345-AA98-E9FF5B142DA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\measurementfile">
+      <UniqueIdentifier>{6877F26E-CF5E-3AA0-8DA2-0227ED41D62A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\measurementmodel">
+      <UniqueIdentifier>{92CEF175-2C55-3438-90A1-8CDC6A42613D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{44C7A786-D87F-387B-B2BA-F205F6C52F45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\propagator">
+      <UniqueIdentifier>{B7FB4138-D53D-352A-BECD-7EDC84D1A1D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\reporter">
+      <UniqueIdentifier>{C9FD16E4-A77D-3A6C-B11C-EE4A85791F78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\signal">
+      <UniqueIdentifier>{DE4BDBC8-614A-36BB-9ED6-16701201BB13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tdmReader">
+      <UniqueIdentifier>{44B11827-105E-32F4-8923-9CD5906BE60C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\trackingfile">
+      <UniqueIdentifier>{4110D05F-C046-3851-A36E-B517206CD172}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

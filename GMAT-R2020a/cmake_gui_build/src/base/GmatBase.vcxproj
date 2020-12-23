@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A49958FA-9BF9-3C4A-9102-F4B40791BDFA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>GmatBase</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GmatBase.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libGmatBased</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GmatBase.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libGmatBase</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GmatBase.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libGmatBase</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GmatBase.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libGmatBase</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4430;4251;4231;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR="Debug";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR=\"Debug\";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\depends\cspice\windows\cspice64\lib\cspiced.lib;..\..\..\depends\xerces\windows-install\lib\xerces-c_3D.lib;..\gmatutil\Debug\GmatUtild.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/Debug/GmatBased.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/application/debug/libGmatBased.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4430;4251;4231;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR="Release";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR=\"Release\";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\depends\cspice\windows\cspice64\lib\cspice.lib;..\..\..\depends\xerces\windows-install\lib\xerces-c_3.lib;..\gmatutil\Release\GmatUtil.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/Release/GmatBase.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/application/bin/libGmatBase.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4430;4251;4231;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR="MinSizeRel";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR=\"MinSizeRel\";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\depends\cspice\windows\cspice64\lib\cspice.lib;..\..\..\depends\xerces\windows-install\lib\xerces-c_3.lib;..\gmatutil\MinSizeRel\GmatUtil.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/MinSizeRel/GmatBase.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/MinSizeRel/libGmatBase.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4430;4251;4231;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR="RelWithDebInfo";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XERCES_STATIC_LIBRARY;__USE_SPICE__;NO_GCC_PRAGMA;UNICODE;_UNICODE;USE_64_BIT_LONGS;_DYNAMICLINK;EXP_STL;CMAKE_INTDIR=\"RelWithDebInfo\";GMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\include;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\datawriter;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\interpolator;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\matrixoperations;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\depends\cspice\windows\cspice64\lib\cspice.lib;..\..\..\depends\xerces\windows-install\lib\xerces-c_3.lib;..\gmatutil\RelWithDebInfo\GmatUtil.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/RelWithDebInfo/GmatBase.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/RelWithDebInfo/libGmatBase.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIFunctions.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIMessageReceiver.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\HelpSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\AssetException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\BodyFixedPoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\GroundstationInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Attitude.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\AttitudeException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\CCSDSAttitude.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\CSFixed.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Kinematic.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\NadirPointing.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\PrecessingSpinner.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Spinner.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\ThreeAxisKinematic.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\BurnException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\Burn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\FiniteBurn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ImpulsiveBurn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\InertialManeuverFrame.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ManeuverFrameManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ManeuverFrame.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\VnbManeuverFrame.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Achieve.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Assignment.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginFiniteBurn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginMissionSequence.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginScript.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BranchCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CallFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CallBuiltinGmatFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CommandException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\FindEvents.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\GmatCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CommandUtil.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ClearPlot.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ConditionalBranch.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Create.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Else.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFiniteBurn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFor.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndIf.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndOptimize.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndScript.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndTarget.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndWhile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\For.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\If.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ManageObject.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Maneuver.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\MarkPoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Minimize.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\NonlinearConstraint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\NoOp.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Optimize.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PenDown.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PenUp.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Propagate.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PropagationEnabledCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PlotCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SolverSequenceCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\RHSEquation.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Report.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\RunSolver.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SaveMission.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SolverBranchCommand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Stop.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Target.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Toggle.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\UpdateDynamicData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Vary.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\While.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Write.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ConfigManagerException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ConfigManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ItemManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\PluginItemManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\AxisSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodyFixedAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodyInertialAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateBase.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateConverter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateSystemException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateTransformation.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateTranslation.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\DynamicAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\EquatorAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\GeocentricSolarEclipticAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\GeocentricSolarMagneticAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\InertialAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ItrfCoefficientsFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\LocalAlignedConstrainedAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MeanOfDateAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MJ2000EcAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MJ2000EqAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MODEcAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MODEqAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MOEEcAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MOEEqAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ObjectReferencedAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TODEcAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TODEqAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TOEEcAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TOEEqAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TopocentricAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TransformUtil.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TrueOfDateAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ICRFAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ICRFFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ITRFAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\IAUFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodySpinSunAxes.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\EventException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\EventLocator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\LocatedEvent.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\ListenerManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\ListenerManagerInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Moderator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PlotInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PlotReceiver.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PublisherException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Publisher.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\SandboxException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Sandbox.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AtmosphereFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AttitudeFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AxisSystemFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\BurnFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CalculatedPointFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CelestialBodyFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CommandFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CoordinateSystemFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FactoryException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FactoryManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\Factory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FunctionFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\HardwareFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FieldOfViewFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\InterfaceFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\MathFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\ODEModelFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\ParameterFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PhysicalModelFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PlateFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PropagatorFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PropSetupFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SolarSystemFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SolverFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SpacecraftFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\StopConditionFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SubscriberFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\GuiFactory.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\GmatWidget.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\PluginWidget.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\DragForce.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\FiniteThrust.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\ODEModelException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\ODEModel.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\GravityField.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\GravityBase.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\HarmonicField.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\NumericJacobianOriginal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\PhysicalModel.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\PointMassForce.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\SolarRadiationPressure.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\RelativisticCorrection.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic\Harmonic.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic\HarmonicGravity.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\Covariance.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\ElementWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\EquationInitializer.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\FileUpdaterSVN.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatBaseException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatBase.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatState.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatType.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\IChangeListener.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\ObjectInitializer.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\SpacePoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\StateManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\TriggerManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\BuiltinGmatFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Function.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\FunctionException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\FunctionManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\GetEphemStates.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\GetLastState.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\ObjectManagedFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Pause.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\SystemTime.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\SetSeed.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\ConvertTime.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Sign.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Str2num.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Num2str.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\RotationMatrix.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\UserDefinedFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ChemicalTank.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ConicalFOV.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\CustomFOV.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ChemicalThruster.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ElectricTank.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ElectricThruster.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FieldOfView.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FieldOfViewException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FuelTank.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\HardwareException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\Hardware.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\NuclearPowerSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\PowerSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\RectangularFOV.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\SolarPowerSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\Thruster.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\InterfaceException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\Interface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\GmatInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\InterpreterException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\Interpreter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\MathParser.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\MathTree.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\ScriptInterpreter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\ScriptReadWriter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\Validator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Abs.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Acos.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Acosh.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Add.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Asin.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Asinh.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Atan.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Atan2.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\BuiltinFunctionNode.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Ceil.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cos.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cosh.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cross3.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\DegToRad.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Determinant.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Diag.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Divide.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Exp.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Fix.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Floor.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\FunctionRunner.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Log.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Log10.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Inverse.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathElement.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathFunction.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathNode.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Min.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Mod.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Multiply.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Negate.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Norm.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\NumericFunctionNode.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Power.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\RadToDeg.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Rand.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Randn.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sin.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sinh.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sprintf.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sqrt.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\StringFunctionNode.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strcat.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strcmp.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strfind.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strrep.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Subtract.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Tan.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Tanh.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Transpose.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\EquationWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AlternateEquinoctialParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AngularParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Array.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ArrayWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ArrayElementWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeRvector.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BallisticMassParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BallisticMassReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BooleanWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BrouwerMeanLongParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BrouwerMeanShortParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\CartesianParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\DelaunayParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EnvData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EnvReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EquinoctialParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ExpressionParser.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\HardwareReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\HardwareParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\IncomingAsymptoteParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\KeplerianParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ModEquinoctialParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\NumberWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ObjectWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ObjectPropertyWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OnOffWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitalParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRmat33.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRmat66.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRvec6.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitStmParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OutgoingAsymptoteParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterDatabase.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterInfo.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Parameter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetodeticParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RealVar.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RefData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rmat33Var.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rmat66Var.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rvec6Var.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RvectorVar.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\SpacecraftData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\SphericalParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringObjectWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringVar.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeData.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeParameters.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeReal.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeString.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Variable.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\VariableWrapper.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeString.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\DynamicLibrary.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\GmatEventHandler.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\GuiInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\AdamsBashforthMoulton.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\DormandElMikkawyPrince68.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\Integrator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PredictorCorrector.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PrinceDormand45.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PrinceDormand78.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropagationStateManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\Propagator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropSetup.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKutta89.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKuttaFehlberg56.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKuttaNystrom.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKutta.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Asteroid.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\AtmosphereModel.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Barycenter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\CalculatedPoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\CelestialBody.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Comet.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\DeFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\EphemSmoother.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\ExponentialAtmosphere.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\JacchiaRobertsAtmosphere.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\LibrationPoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\MediaCorrectionInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Moon.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Msise90Atmosphere.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\PlanetaryEphemException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\PlanetaryEphem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Planet.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\ShadowState.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SlpFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarFluxReader.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarSystemException.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarSystem.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Star.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Solver.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\DifferentialCorrector.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Optimizer.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\InternalOptimizer.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\ISolverListener.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\ExternalOptimizer.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\DerivativeModel.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Gradient.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Jacobian.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\LineSearch.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\FormationInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\Plate.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\Spacecraft.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\SpaceObject.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\TextTrajectoryFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond\StopCondition.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemerisFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemerisWriter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterCCSDS.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterCode500.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterSPK.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterSTK.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterWithInterpolator.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemManager.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\MessageWindow.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\TextEphemFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OrbitView.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OwnedPlot.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\ReportFile.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\Subscriber.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\XyPlot.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OrbitPlot.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\GroundTrackPlot.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\DynamicDataDisplay.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\DynamicDataInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SimpleExponentialAtmosphere.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SpecialCelestialPoint.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\msise90_sub.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\SpiceAttitude.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceAttitudeKernelReader.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceInterface.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceOrbitKernelReader.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceKernelReader.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceKernelWriter.cpp" />
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceOrbitKernelWriter.cpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIFunctions.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\APIMessageReceiver.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\ApiClass.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\api\HelpSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\AssetException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\BodyFixedPoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\asset\GroundstationInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Attitude.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\AttitudeException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\CCSDSAttitude.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\CSFixed.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Kinematic.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\NadirPointing.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\PrecessingSpinner.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\SpiceAttitude.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\Spinner.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\attitude\ThreeAxisKinematic.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\Burn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\BurnException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\FiniteBurn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ImpulsiveBurn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\InertialManeuverFrame.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ManeuverFrame.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\ManeuverFrameManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\burn\VnbManeuverFrame.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Achieve.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Assignment.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginFiniteBurn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginMissionSequence.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BeginScript.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\BranchCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CallBuiltinGmatFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CallFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ClearPlot.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CommandException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\CommandUtil.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ConditionalBranch.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Create.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Else.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ElseIf.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFiniteBurn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFor.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndIf.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndOptimize.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndScript.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndTarget.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\EndWhile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\FindEvents.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\For.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\GmatCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\If.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\ManageObject.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Maneuver.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\MarkPoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Minimize.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\NoOp.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\NonlinearConstraint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Optimize.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PenDown.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PenUp.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PlotCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Propagate.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\PropagationEnabledCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\RHSEquation.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Report.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\RunSolver.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SaveMission.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SolverBranchCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\SolverSequenceCommand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Stop.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Target.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Toggle.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\UpdateDynamicData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Vary.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\While.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\command\Write.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ConfigManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ConfigManagerException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\ItemManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\configs\PluginItemManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\AxisSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodyFixedAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodyInertialAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\BodySpinSunAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateBase.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateConverter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateSystemException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateTransformation.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\CoordinateTranslation.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\DynamicAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\EquatorAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\GeocentricSolarEclipticAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\GeocentricSolarMagneticAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\IAUFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ICRFAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ICRFFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ITRFAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\InertialAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ItrfCoefficientsFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\LocalAlignedConstrainedAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MJ2000EcAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MJ2000EqAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MODEcAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MODEqAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MOEEcAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MOEEqAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\MeanOfDateAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\ObjectReferencedAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TODEcAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TODEqAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TOEEcAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TOEEqAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TopocentricAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TransformUtil.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\coordsystem\TrueOfDateAxes.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\EventException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\EventLocator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\event\LocatedEvent.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\ListenerManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\ListenerManagerInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Moderator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PlotInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PlotReceiver.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Publisher.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\PublisherException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\Sandbox.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\executive\SandboxException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AssetFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AtmosphereFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AttitudeFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\AxisSystemFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\BurnFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CalculatedPointFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CelestialBodyFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CommandFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\CoordinateSystemFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\Factory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FactoryException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FactoryManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FieldOfViewFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FormationFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\FunctionFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\HardwareFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\InterfaceFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\MathFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\ODEModelFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\ParameterFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PhysicalModelFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PlateFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PropSetupFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\PropagatorFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SolarSystemFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SolverFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SpacecraftFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\StopConditionFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\SubscriberFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\GmatWidget.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\GuiFactory.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\factory\guicomponents\PluginWidget.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\DragForce.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\EventModel.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\FiniteThrust.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\GravityBase.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\GravityField.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\HarmonicField.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\NumericJacobianOriginal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\ODEModel.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\ODEModelException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\PhysicalModel.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\PointMassForce.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\RelativisticCorrection.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\SolarRadiationPressure.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic\Harmonic.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\forcemodel\harmonic\HarmonicGravity.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\Covariance.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\ElementWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\EquationInitializer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\FileUpdaterSVN.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatBase.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatBaseException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatState.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\GmatType.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\IChangeListener.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\ObjectInitializer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\SpacePoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\StateManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\foundation\TriggerManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\BuiltinGmatFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\ConvertTime.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Function.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\FunctionException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\FunctionManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\GetEphemStates.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\GetLastState.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Num2str.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\ObjectManagedFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Pause.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\RotationMatrix.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\SetSeed.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Sign.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\Str2num.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\SystemTime.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\function\UserDefinedFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ChemicalTank.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ChemicalThruster.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ConicalFOV.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\CustomFOV.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ElectricTank.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\ElectricThruster.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FieldOfView.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FieldOfViewException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\FuelTank.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\Hardware.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\HardwareException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\NuclearPowerSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\PowerSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\RectangularFOV.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\SolarPowerSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\hardware\Thruster.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include\DoxygenBaseIntro.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\include\gmatdefs.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\GmatInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\Interface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\InterfaceException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interface\SocketServer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\Interpreter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\InterpreterException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\MathParser.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\MathTree.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\ScriptInterpreter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\ScriptReadWriter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\interpreter\Validator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Abs.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Acos.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Acosh.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Add.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Asin.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Asinh.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Atan.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Atan2.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\BuiltinFunctionNode.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Ceil.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cos.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cosh.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Cross3.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\DegToRad.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Determinant.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Diag.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Divide.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\EquationWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Exp.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Fix.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Floor.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\FunctionRunner.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Inverse.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Log.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Log10.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathElement.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathFunction.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\MathNode.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Min.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Mod.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Multiply.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Negate.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Norm.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\NumericFunctionNode.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Power.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\RadToDeg.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Rand.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Randn.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sin.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sinh.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sprintf.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Sqrt.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strcat.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strcmp.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strfind.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\StringFunctionNode.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Strrep.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Subtract.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Tan.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Tanh.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\math\Transpose.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AlternateEquinoctialParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AngularParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Array.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ArrayElementWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ArrayWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeRvector.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\AttitudeString.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BallisticMassParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BallisticMassReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BooleanWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BplaneReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BrouwerMeanLongParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BrouwerMeanShortParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\BurnReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\CartesianParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\DelaunayParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EnvData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EnvReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\EquinoctialParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ExpressionParser.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\HardwareParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\HardwareReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\IncomingAsymptoteParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\KeplerianParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ModEquinoctialParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\NumberWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ObjectPropertyWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ObjectWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OnOffWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRmat33.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRmat66.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitRvec6.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitStmParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OrbitalParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\OutgoingAsymptoteParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Parameter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterDatabase.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterDatabaseException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterInfo.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\ParameterWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\PlanetodeticParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RealVar.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RefData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rmat33Var.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rmat66Var.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Rvec6Var.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\RvectorVar.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\SpacecraftData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\SphericalParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringObjectWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringVar.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\StringWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeData.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeParameters.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeReal.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\TimeString.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\Variable.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\VariableWrapper.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\parameter\paramdefs.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\DynamicLibrary.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\GmatEventHandler.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\plugin\GuiInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\AdamsBashforthMoulton.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\Cowell.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\DormandElMikkawyPrince68.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\Integrator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PredictorCorrector.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PrinceDormand45.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PrinceDormand78.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropSetup.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropSetupException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropagationStateManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\Propagator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\PropagatorException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKutta.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKutta89.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKuttaFehlberg56.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\propagator\RungeKuttaNystrom.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Asteroid.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\AtmosphereException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\AtmosphereModel.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Barycenter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\CalculatedPoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\CelestialBody.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Comet.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\DeFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\EphemSmoother.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\ExponentialAtmosphere.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\JacchiaRobertsAtmosphere.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\LibrationPoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\MediaCorrectionInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Moon.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Msise90Atmosphere.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Planet.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\PlanetaryEphem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\PlanetaryEphemException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\ShadowState.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SimpleExponentialAtmosphere.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SlpFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarFluxReader.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarSystem.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SolarSystemException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\SpecialCelestialPoint.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solarsys\Star.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\DerivativeModel.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\DifferentialCorrector.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\ExternalOptimizer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Gradient.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\ISolverListener.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\InternalOptimizer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Jacobian.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\LineSearch.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Optimizer.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\Solver.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\solver\SolverException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\FormationInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\Plate.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\SpaceObject.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\SpaceObjectException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\Spacecraft.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spacecraft\TextTrajectoryFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceAttitudeKernelReader.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceKernelReader.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceKernelWriter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceOrbitKernelReader.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\spice\SpiceOrbitKernelWriter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond\StopCondition.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\stopcond\StopConditionException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\DynamicDataDisplay.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\DynamicDataInterface.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\DynamicDataStruct.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemManager.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterCCSDS.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterCode500.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterSPK.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterSTK.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemWriterWithInterpolator.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemerisFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\EphemerisWriter.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\GroundTrackPlot.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\MessageWindow.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OpenGlPlot.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OrbitPlot.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OrbitView.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\OwnedPlot.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\ReportFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\Subscriber.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\SubscriberException.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\TextEphemFile.hpp" />
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\base\subscriber\XyPlot.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\ZERO_CHECK.vcxproj">
+      <Project>{B9FDCC5A-7C4A-3C65-9511-65CC70564AB6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\gmatutil\GmatUtil.vcxproj">
+      <Project>{56B4A7D5-3DD5-32D7-839B-C51122966BA7}</Project>
+      <Name>GmatUtil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

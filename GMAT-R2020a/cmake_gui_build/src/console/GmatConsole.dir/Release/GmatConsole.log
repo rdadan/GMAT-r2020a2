@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/console/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/console/CMakeFiles/generate.stamp is up-to-date.
+  driver.cpp
+  ConsoleAppException.cpp
+  PrintUtility.cpp
+  ConsoleMessageReceiver.cpp
+  GmatConsole.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\bin\GmatConsole.exe

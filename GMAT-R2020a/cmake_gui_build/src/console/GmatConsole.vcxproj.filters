@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\ConsoleAppException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\PrintUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\ConsoleMessageReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\ConsoleAppException.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\ConsoleMessageReceiver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\PrintUtility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\driver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\console\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F575BB39-2F6D-3545-8949-B0FC7E8F7094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754ACB58-DCD0-32E1-9D72-A549EC754539}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

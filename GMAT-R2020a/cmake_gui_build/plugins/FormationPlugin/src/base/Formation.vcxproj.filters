@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\factory\FormationFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\formation\Formation.cpp">
+      <Filter>Source Files\formation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\plugin\GmatPluginFunctions.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\factory\FormationFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\formation\Formation.hpp">
+      <Filter>Header Files\formation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\include\FormationDefs.hpp">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\plugin\GmatPluginFunctions.hpp">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\FormationPlugin\src\base\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F575BB39-2F6D-3545-8949-B0FC7E8F7094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\factory">
+      <UniqueIdentifier>{45ABA8F0-DC5E-30F3-853D-35D219222D72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\formation">
+      <UniqueIdentifier>{B3CCD127-1A8E-3CB6-93F9-D54592E36CF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{56E9F4D7-950F-3B5B-ABF6-8881DFB68054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{580EA98A-3CA3-3C90-8124-603A46F594EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754ACB58-DCD0-32E1-9D72-A549EC754539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\factory">
+      <UniqueIdentifier>{E1C7D092-2C69-3AB2-B979-74AF6CB62A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\formation">
+      <UniqueIdentifier>{BCC16CBD-0254-319C-8E40-E8656B1D9A0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{44C7A786-D87F-387B-B2BA-F205F6C52F45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

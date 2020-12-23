@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E37B0C0A-2B47-3735-A067-8C8F79E73E2C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\build\install\CMake_INSTALL_Setup.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCXXCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeRCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeSystem.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.c;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.cxx;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindMatlab.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPythonLibs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindSWIG.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindXercesC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindwxWidgets.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\build\install\CMake_INSTALL_Setup.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCXXCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeRCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeSystem.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.c;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.cxx;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindMatlab.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPythonLibs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindSWIG.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindXercesC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindwxWidgets.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\build\install\CMake_INSTALL_Setup.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCXXCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeRCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeSystem.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.c;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.cxx;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindMatlab.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPythonLibs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindSWIG.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindXercesC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindwxWidgets.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake3.14.7\bin\cmake.exe" -SD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a -BD:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build --check-stamp-file D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\build\install\CMake_INSTALL_Setup.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeCXXCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeRCCompiler.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\3.14.7\CMakeSystem.cmake;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.c;D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\feature_tests.cxx;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeFindFrameworks.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindMatlab.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindPythonLibs.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindSWIG.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindXercesC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\FindwxWidgets.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake3.14.7\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\ZERO_CHECK.vcxproj">
+      <Project>{B9FDCC5A-7C4A-3C65-9511-65CC70564AB6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\CInterfacePlugin\src\CInterface.vcxproj">
+      <Project>{D53BF41E-4E6E-3FFB-994F-DB1DC099455C}</Project>
+      <Name>CInterface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\DataInterfacePlugin\src\base\DataInterface.vcxproj">
+      <Project>{E0C6A29F-B637-321B-8C2C-6295C7AD5EF4}</Project>
+      <Name>DataInterface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\ExtendedKalmanFilterPlugin\src\base\EKF.vcxproj">
+      <Project>{4EFB0774-755F-30D2-925F-4377FDD9DF2B}</Project>
+      <Name>EKF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\EphemPropagatorPlugin\src\base\EphemPropagator.vcxproj">
+      <Project>{74D371A1-C0C7-390B-9DE9-C0B34B233395}</Project>
+      <Name>EphemPropagator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\EventLocatorPlugin\src\base\EventLocator.vcxproj">
+      <Project>{69013405-1745-376F-A913-C874152E8444}</Project>
+      <Name>EventLocator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\ExtraPropagatorsPlugin\src\base\ExtraPropagators.vcxproj">
+      <Project>{4A247DD9-1B16-3DE1-B0F6-10142598A306}</Project>
+      <Name>ExtraPropagators</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\FormationPlugin\src\base\Formation.vcxproj">
+      <Project>{8BF7644A-4ACE-3C67-A486-66819C1FB34A}</Project>
+      <Name>Formation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\base\GmatBase.vcxproj">
+      <Project>{A49958FA-9BF9-3C4A-9102-F4B40791BDFA}</Project>
+      <Name>GmatBase</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\console\GmatConsole.vcxproj">
+      <Project>{9E156057-4410-3A72-8808-8E9759CCBCB8}</Project>
+      <Name>GmatConsole</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\EstimationPlugin\src\base\GmatEstimation.vcxproj">
+      <Project>{ECA45490-7838-3917-8598-421253BBD27C}</Project>
+      <Name>GmatEstimation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\GmatFunctionPlugin\src\base\GmatFunction.vcxproj">
+      <Project>{957A9D2D-641E-3E4E-BEAE-0566780E43E7}</Project>
+      <Name>GmatFunction</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\gui\GmatGUI.vcxproj">
+      <Project>{47D62949-3618-3173-ABD8-E82BF9447F65}</Project>
+      <Name>GmatGUI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\src\gmatutil\GmatUtil.vcxproj">
+      <Project>{56B4A7D5-3DD5-32D7-839B-C51122966BA7}</Project>
+      <Name>GmatUtil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\NewParameterPlugin\src\base\NewParameters.vcxproj">
+      <Project>{C011D671-83FA-3B7E-B1F5-C17E11A797B6}</Project>
+      <Name>NewParameters</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\PolyhedronGravityPlugin\src\base\PolyhedronGravity.vcxproj">
+      <Project>{A2E589F3-ABF1-3FFD-8C9E-F71106017291}</Project>
+      <Name>PolyhedronGravity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\ProductionPropagatorPlugin\src\base\ProductionPropagators.vcxproj">
+      <Project>{A986F086-649B-300B-AC9B-DA9213639B59}</Project>
+      <Name>ProductionPropagators</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\PythonInterfacePlugin\src\base\PythonInterface.vcxproj">
+      <Project>{003515CD-04E8-359F-B3C9-AC7B51368F0B}</Project>
+      <Name>PythonInterface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\SaveCommandPlugin\src\base\SaveCommand.vcxproj">
+      <Project>{BB22F928-51D4-3A0F-B6C0-DAC7DBA82442}</Project>
+      <Name>SaveCommand</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\ScriptToolsPlugin\src\base\ScriptTools.vcxproj">
+      <Project>{547912D9-72BD-304A-B423-55FDA9021EC5}</Project>
+      <Name>ScriptTools</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\StationPlugin\src\base\Station.vcxproj">
+      <Project>{D3F28C13-F354-310E-90C1-5A562B1C81BD}</Project>
+      <Name>Station</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\ThrustFilePlugin\src\base\ThrustFile.vcxproj">
+      <Project>{B99DA83B-B1F6-3721-B112-84DE7446B9B4}</Project>
+      <Name>ThrustFile</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\cmake_gui_build\plugins\YukonOptimizerPlugin\src\base\YukonOptimizer.vcxproj">
+      <Project>{E30DBE7C-D917-35A0-B539-D9CF801C294C}</Project>
+      <Name>YukonOptimizer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

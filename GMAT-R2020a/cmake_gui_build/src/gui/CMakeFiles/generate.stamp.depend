@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/gui/CMakeLists.txt
+D:/Program Files/CMake3.14.7/share/cmake-3.14/Modules/FindOpenGL.cmake
+D:/Program Files/CMake3.14.7/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake3.14.7/share/cmake-3.14/Modules/FindPackageMessage.cmake
+D:/Program Files/CMake3.14.7/share/cmake-3.14/Modules/UsewxWidgets.cmake

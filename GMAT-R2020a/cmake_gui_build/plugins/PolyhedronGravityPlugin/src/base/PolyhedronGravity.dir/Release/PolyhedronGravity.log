@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/plugins/PolyhedronGravityPlugin/src/base/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/PolyhedronGravityPlugin/src/base/CMakeFiles/generate.stamp is up-to-date.
+  PolyhedronGravityModelFactory.cpp
+  GravityParameterFactory.cpp
+  PolyhedronBody.cpp
+  PolyhedronGravityModel.cpp
+  GravData.cpp
+  GravReal.cpp
+  SurfaceHeight.cpp
+  GmatPluginFunctions.cpp
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/PolyhedronGravityPlugin/src/base/Release/PolyhedronGravity.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/PolyhedronGravityPlugin/src/base/Release/PolyhedronGravity.exp
+  PolyhedronGravity.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\plugins\libPolyhedronGravity.dll

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\factory\EphemPropFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\plugin\GmatPluginFunctions.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\EphemerisPropagator.cpp">
+      <Filter>Source Files\propagator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\Code500Propagator.cpp">
+      <Filter>Source Files\propagator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\SPKPropagator.cpp">
+      <Filter>Source Files\propagator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\StkEPropagator.cpp">
+      <Filter>Source Files\propagator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\factory\EphemPropFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\include\ephempropagator_defs.hpp">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\plugin\GmatPluginFunctions.hpp">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\Code500Propagator.hpp">
+      <Filter>Header Files\propagator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\EphemerisPropagator.hpp">
+      <Filter>Header Files\propagator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\SPKPropagator.hpp">
+      <Filter>Header Files\propagator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\propagator\StkEPropagator.hpp">
+      <Filter>Header Files\propagator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EphemPropagatorPlugin\src\base\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F575BB39-2F6D-3545-8949-B0FC7E8F7094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\factory">
+      <UniqueIdentifier>{45ABA8F0-DC5E-30F3-853D-35D219222D72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{56E9F4D7-950F-3B5B-ABF6-8881DFB68054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{580EA98A-3CA3-3C90-8124-603A46F594EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\propagator">
+      <UniqueIdentifier>{942228B9-A6F5-38FC-829D-08EEEFACAB26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754ACB58-DCD0-32E1-9D72-A549EC754539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\factory">
+      <UniqueIdentifier>{E1C7D092-2C69-3AB2-B979-74AF6CB62A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{44C7A786-D87F-387B-B2BA-F205F6C52F45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\propagator">
+      <UniqueIdentifier>{B7FB4138-D53D-352A-BECD-7EDC84D1A1D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

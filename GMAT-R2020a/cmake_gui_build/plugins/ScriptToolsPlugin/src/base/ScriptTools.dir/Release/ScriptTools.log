@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/plugins/ScriptToolsPlugin/src/base/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/ScriptToolsPlugin/src/base/CMakeFiles/generate.stamp is up-to-date.
+  CommandEcho.cpp
+  CommandEchoFactory.cpp
+  GmatPluginFunctions.cpp
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/ScriptToolsPlugin/src/base/Release/ScriptTools.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/ScriptToolsPlugin/src/base/Release/ScriptTools.exp
+  ScriptTools.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\plugins\libScriptTools.dll

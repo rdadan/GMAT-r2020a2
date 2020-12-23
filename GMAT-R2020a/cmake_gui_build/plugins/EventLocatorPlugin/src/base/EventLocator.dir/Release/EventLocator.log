@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/plugins/EventLocatorPlugin/src/base/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EventLocatorPlugin/src/base/CMakeFiles/generate.stamp is up-to-date.
+  ContactEvent.cpp
+  ContactResult.cpp
+  EclipseEvent.cpp
+  EclipseTotalEvent.cpp
+  EventLocatorFactory.cpp
+  ContactLocator.cpp
+  EclipseLocator.cpp
+  GmatPluginFunctions.cpp
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EventLocatorPlugin/src/base/Release/EventLocator.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EventLocatorPlugin/src/base/Release/EventLocator.exp
+  EventLocator.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\plugins\libEventLocator.dll

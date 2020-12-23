@@ -1,0 +1,88 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/src/gmatutil/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/gmatutil/CMakeFiles/generate.stamp is up-to-date.
+  A1Date.cpp
+  A1Mjd.cpp
+  AngleUtil.cpp
+  AttitudeConversionUtility.cpp
+  AttitudeUtil.cpp
+  BaseException.cpp
+  BodyFixedStateConverter.cpp
+  CalculationUtilities.cpp
+  CCSDSAEMEulerAngleSegment.cpp
+  CCSDSAEMQuaternionSegment.cpp
+  CCSDSAEMReader.cpp
+  CCSDSAEMSegment.cpp
+  CCSDSEMReader.cpp
+  CCSDSEMSegment.cpp
+  CCSDSEMWriter.cpp
+  CCSDSOEMSegment.cpp
+  CCSDSOEMWriter.cpp
+  Code500EphemerisFile.cpp
+  ColorDatabase.cpp
+  CubicSpline.cpp
+  Date.cpp
+  DateUtil.cpp
+  ElapsedTime.cpp
+  Ephemeris.cpp
+  EopFile.cpp
+  FileManager.cpp
+  FileUtil.cpp
+  GmatGlobal.cpp
+  GmatTime.cpp
+  GravityFileUtil.cpp
+  GregorianDate.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\GmatTime.cpp(671): warning C4244: “=”: 从“Real”转换到“long”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\src\gmatutil\util\GmatTime.cpp(687): warning C4244: “-=”: 从“Real”转换到“long”，可能丢失数据
+  IFileUpdater.cpp
+  LeapSecsFileReader.cpp
+  Linear.cpp
+  MemoryTracker.cpp
+  MessageInterface.cpp
+  MessageReceiver.cpp
+  NumericJacobian.cpp
+  NPlateHistoryFileReader.cpp
+  RandomNumber.cpp
+  RealUtilities.cpp
+  RgbColor.cpp
+  Rmatrix33.cpp
+  Rmatrix66.cpp
+  Rmatrix.cpp
+  Rvector3.cpp
+  Rvector6.cpp
+  Rvector.cpp
+  SPADFileReader.cpp
+  StateConversionUtil.cpp
+  STKEphemerisFile.cpp
+  StringTokenizer.cpp
+  StringUtil.cpp
+  TextParser.cpp
+  TimeSystemConverter.cpp
+  TimeTypes.cpp
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\src\gmatutil\util\stateconversionutil.cpp(6983): warning C4700: 使用了未初始化的局部变量“newE”
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\src\gmatutil\util\stateconversionutil.cpp(6935): warning C4700: 使用了未初始化的局部变量“newE”
+  UtcDate.cpp
+  DataBucket.cpp
+  DataWriter.cpp
+  DataWriterInterface.cpp
+  DataWriterMaker.cpp
+  WriterData.cpp
+  InterpolatorException.cpp
+  Interpolator.cpp
+  BrentDekkerZero.cpp
+  CubicSplineInterpolator.cpp
+  HermiteInterpolator.cpp
+  LinearInterpolator.cpp
+  NotAKnotInterpolator.cpp
+  LagrangeInterpolator.cpp
+  CholeskyFactorization.cpp
+  LUFactorization.cpp
+  MatrixFactorization.cpp
+  QRFactorization.cpp
+  SchurFactorization.cpp
+  Frozen.cpp
+  OrbitDesignerTime.cpp
+  RepeatSunSync.cpp
+  RepeatGroundTrack.cpp
+  SunSync.cpp
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/gmatutil/Release/GmatUtil.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/src/gmatutil/Release/GmatUtil.exp
+  GmatUtil.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\bin\libGmatUtil.dll

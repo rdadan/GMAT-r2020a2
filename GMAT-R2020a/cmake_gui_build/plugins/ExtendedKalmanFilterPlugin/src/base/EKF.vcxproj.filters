@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\command\RunSmoother.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\EKF\ExtendedKalmanFilter.cpp">
+      <Filter>Source Files\EKF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\EKF\SeqEstimator.cpp">
+      <Filter>Source Files\EKF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\EKFCommandFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ExtendedKalmanFilterFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ProcessNoiseFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ProcessNoiseModelFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\SmootherFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\LinearProcessNoise.cpp">
+      <Filter>Source Files\noise</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\ProcessNoiseBase.cpp">
+      <Filter>Source Files\noise</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\ProcessNoiseModel.cpp">
+      <Filter>Source Files\noise</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\SNCProcessNoise.cpp">
+      <Filter>Source Files\noise</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\plugin\GmatPluginFunctions.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\smoother\Smoother.cpp">
+      <Filter>Source Files\smoother</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\smoother\SmootherBase.cpp">
+      <Filter>Source Files\smoother</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\command\RunSmoother.hpp">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\EKF\ExtendedKalmanFilter.hpp">
+      <Filter>Header Files\EKF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\EKF\SeqEstimator.hpp">
+      <Filter>Header Files\EKF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\EKFCommandFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ExtendedKalmanFilterFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ProcessNoiseFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\ProcessNoiseModelFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\factory\SmootherFactory.hpp">
+      <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\include\kalman_defs.hpp">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\LinearProcessNoise.hpp">
+      <Filter>Header Files\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\NoiseException.hpp">
+      <Filter>Header Files\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\ProcessNoiseBase.hpp">
+      <Filter>Header Files\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\ProcessNoiseModel.hpp">
+      <Filter>Header Files\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\noise\SNCProcessNoise.hpp">
+      <Filter>Header Files\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\plugin\GmatPluginFunctions.hpp">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\smoother\Smoother.hpp">
+      <Filter>Header Files\smoother</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\smoother\SmootherBase.hpp">
+      <Filter>Header Files\smoother</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\ExtendedKalmanFilterPlugin\src\base\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F575BB39-2F6D-3545-8949-B0FC7E8F7094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EKF">
+      <UniqueIdentifier>{21666615-7BE3-3DBE-9283-ADD6FF4A9C5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\command">
+      <UniqueIdentifier>{BDC20F94-FCA6-3ED4-B49A-DCCA11D6F3D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\factory">
+      <UniqueIdentifier>{45ABA8F0-DC5E-30F3-853D-35D219222D72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{56E9F4D7-950F-3B5B-ABF6-8881DFB68054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\noise">
+      <UniqueIdentifier>{380DB08B-4D7F-3028-BE29-82FF90C3FD40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{580EA98A-3CA3-3C90-8124-603A46F594EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\smoother">
+      <UniqueIdentifier>{0FA1A769-715B-3109-9620-9EF3263BA8ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{754ACB58-DCD0-32E1-9D72-A549EC754539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EKF">
+      <UniqueIdentifier>{816B03CD-5123-3C4E-8EDF-A567F966EAE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{30AFF0EB-B99C-3E07-93FE-9013A8A99D76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\factory">
+      <UniqueIdentifier>{E1C7D092-2C69-3AB2-B979-74AF6CB62A1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\noise">
+      <UniqueIdentifier>{9070B47F-4684-3DD4-A50D-6443AC60191E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{44C7A786-D87F-387B-B2BA-F205F6C52F45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\smoother">
+      <UniqueIdentifier>{38495060-E27C-3FFA-81CA-13EF269A996D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

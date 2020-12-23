@@ -1,0 +1,151 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/plugins/EstimationPlugin/src/base/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EstimationPlugin/src/base/CMakeFiles/generate.stamp is up-to-date.
+  AngleAdapterDeg.cpp
+  AzimuthAdapter.cpp
+  DeclinationAdapter.cpp
+  DopplerAdapter.cpp
+  DSNRangeAdapter.cpp
+  ElevationAdapter.cpp
+  GNDopplerAdapter.cpp
+  GNRangeAdapter.cpp
+  GPSAdapter.cpp
+  PointRangeRateAdapterKps.cpp
+  RangeAdapterKm.cpp
+  RangeRateAdapterKps.cpp
+  RightAscAdapter.cpp
+  TDRSDopplerAdapter.cpp
+  TDRSRangeAdapter.cpp
+  TrackingDataAdapter.cpp
+  XEastAdapter.cpp
+  XSouthAdapter.cpp
+  YEastAdapter.cpp
+  YNorthAdapter.cpp
+  RangeSkinAdapter.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TrackingDataAdapter.cpp(2224): warning C4244: “=”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\adapter\TrackingDataAdapter.cpp(2228): warning C4244: “=”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+  RunEstimator.cpp
+  RunSimulator.cpp
+  DataFilter.cpp
+  AcceptFilter.cpp
+  RejectFilter.cpp
+  ErrorModel.cpp
+  BatchEstimatorBase.cpp
+  BatchEstimator.cpp
+  EstimationStateManager.cpp
+  Estimator.cpp
+  EstimatorException.cpp
+  Simulator.cpp
+  EstimationRootFinder.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\BatchEstimator.cpp(680): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+  Event.cpp
+  EventData.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(5396): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(5450): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(5536): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(5831): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6234): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6383): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6473): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6544): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6633): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(6910): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(7598): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(7618): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8332): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8332): warning C4244: “初始化”: 从“Real”转换到“Integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8382): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8416): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8609): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\estimator\Estimator.cpp(8610): warning C4244: “参数”: 从“unsigned __int64”转换到“Real”，可能丢失数据
+  EventException.cpp
+  EventManager.cpp
+  DataFileFactory.cpp
+  ErrorModelFactory.cpp
+  EstimationCommandFactory.cpp
+  EstimationDataFilterFactory.cpp
+  EstimatorFactory.cpp
+  EstimatorHardwareFactory.cpp
+  MeasurementModelFactory.cpp
+  NavPropagatorFactory.cpp
+  ObTypeFactory.cpp
+  SignalModelFactory.cpp
+  Antenna.cpp
+  RFHardware.cpp
+  Receiver.cpp
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(46): warning C4275: 非 dll 接口 class“xercesc_3_2::ErrorHandler”用作 dll 接口 class“TdmErrorHandler”的基 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ObTypeFactory.cpp)
+  D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include\xercesc/sax/ErrorHandler.hpp(60): note: 参见“xercesc_3_2::ErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ObTypeFactory.cpp)
+  d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(45): note: 参见“TdmErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\factory\ObTypeFactory.cpp)
+  Sensor.cpp
+  Signal.cpp
+  Transmitter.cpp
+  Transponder.cpp
+  MeasurementData.cpp
+  MeasurementManager.cpp
+  MeasurementModelBase.cpp
+  MediaCorrection.cpp
+  Troposphere.cpp
+  B3_obtype.cpp
+  DataFile.cpp
+  DataFileAdapter.cpp
+  GmatObType.cpp
+  GmatData.cpp
+  ObservationData.cpp
+  ObType.cpp
+  RampTableData.cpp
+  RampTableType.cpp
+  MeasureModel.cpp
+  GPSPointMeasureModel.cpp
+  GmatPluginFunctions.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(615): warning C4005: “min”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(197): note: 参见“min”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(616): warning C4005: “max”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(193): note: 参见“max”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\MeasureModel.cpp)
+  RungeKutta4.cpp
+  ProgressReporter.cpp
+  PhysicalSignal.cpp
+  SignalBase.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(615): warning C4005: “min”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(197): note: 参见“min”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(616): warning C4005: “max”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(193): note: 参见“max”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurementmodel\GPSPointMeasureModel.cpp)
+  SignalData.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(615): warning C4005: “min”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(197): note: 参见“min”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(616): warning C4005: “max”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(193): note: 参见“max”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PhysicalSignal.cpp)
+  SinglePointSignal.cpp
+  PassivePhysicalSignal.cpp
+  SignalDataCache.cpp
+  TdmErrorHandler.cpp
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(615): warning C4005: “min”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(197): note: 参见“min”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(616): warning C4005: “max”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(193): note: 参见“max”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\signal\PassivePhysicalSignal.cpp)
+  TdmObType.cpp
+  TdmReadWriter.cpp
+  TFSMagicNumbers.cpp
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(46): warning C4275: 非 dll 接口 class“xercesc_3_2::ErrorHandler”用作 dll 接口 class“TdmErrorHandler”的基 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmErrorHandler.cpp)
+  D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include\xercesc/sax/ErrorHandler.hpp(60): note: 参见“xercesc_3_2::ErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmErrorHandler.cpp)
+  d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(45): note: 参见“TdmErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmErrorHandler.cpp)
+  TrackingFileSet.cpp
+  Ionosphere.cpp
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(46): warning C4275: 非 dll 接口 class“xercesc_3_2::ErrorHandler”用作 dll 接口 class“TdmErrorHandler”的基 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmReadWriter.cpp)
+  D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include\xercesc/sax/ErrorHandler.hpp(60): note: 参见“xercesc_3_2::ErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmReadWriter.cpp)
+  d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(45): note: 参见“TdmErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmReadWriter.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(615): warning C4005: “min”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(197): note: 参见“min”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\cspice\windows\cspice64\include\f2c.h(616): warning C4005: “max”: 宏重定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(193): note: 参见“max”的前一个定义 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp)
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\Ionosphere.cpp(670): warning C4244: “初始化”: 从“Real”转换到“int”，可能丢失数据
+d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(46): warning C4275: 非 dll 接口 class“xercesc_3_2::ErrorHandler”用作 dll 接口 class“TdmErrorHandler”的基 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmObType.cpp)
+  D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\depends\xerces\windows-install\include\xercesc/sax/ErrorHandler.hpp(60): note: 参见“xercesc_3_2::ErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmObType.cpp)
+  d:\gmat\gmat-src\gmat-r2020a2\gmat-r2020a\plugins\estimationplugin\src\base\tdmreader\TdmErrorHandler.hpp(45): note: 参见“TdmErrorHandler”的声明 (编译源文件 D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\tdmReader\TdmObType.cpp)
+  iri2007.c
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(50931): warning C4244: “=”: 从“float”转换到“integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(50935): warning C4244: “=”: 从“float”转换到“integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(51004): warning C4244: “=”: 从“real”转换到“integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(51016): warning C4244: “=”: 从“real”转换到“integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(53718): warning C4244: “=”: 从“float”转换到“integer”，可能丢失数据
+D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\plugins\EstimationPlugin\src\base\measurement\Ionosphere\iri2007.c(55237): warning C4244: “=”: 从“real”转换到“integer”，可能丢失数据
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EstimationPlugin/src/base/Release/GmatEstimation.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/EstimationPlugin/src/base/Release/GmatEstimation.exp
+  GmatEstimation.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\plugins\libGmatEstimation.dll

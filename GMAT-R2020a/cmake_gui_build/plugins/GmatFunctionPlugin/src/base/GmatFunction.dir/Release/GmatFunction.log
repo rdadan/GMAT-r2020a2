@@ -1,0 +1,10 @@
+﻿  Building Custom Rule D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/plugins/GmatFunctionPlugin/src/base/CMakeLists.txt
+  CMake does not need to re-run because D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/GmatFunctionPlugin/src/base/CMakeFiles/generate.stamp is up-to-date.
+  CallGmatFunction.cpp
+  Global.cpp
+  GmatFunctionCommandFactory.cpp
+  GmatFunctionFactory.cpp
+  GmatFunction.cpp
+  GmatPluginFunctions.cpp
+    正在创建库 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/GmatFunctionPlugin/src/base/Release/GmatFunction.lib 和对象 D:/GMAT/gmat-src/GMAT-r2020a2/GMAT-R2020a/cmake_gui_build/plugins/GmatFunctionPlugin/src/base/Release/GmatFunction.exp
+  GmatFunction.vcxproj -> D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\application\plugins\libGmatFunction.dll
