@@ -1,13 +1,36 @@
 GMAT Build Date: Dec 23 2020 15:13:13
 
 GMAT Log file set to D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\output\GmatLog.txt
-Error occurred during initialization: Utility Exception: At least 10 directories do not exist, including:
-TIME_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\time\
-PLANETARY_COEFF_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_coeff\
-PLANETARY_EPHEM_DE_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_ephem\de\
-PLANETARY_EPHEM_SPK_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_ephem\spk\
-VEHICLE_EPHEM_SPK_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\vehicle\ephem\spk\
-VEHICLE_EPHEM_CCSDS_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\vehicle\ephem\ccsds\
-EARTH_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\earth\
-LUNA_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\luna\
-VENUS_POT_PATH = D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\gravity\venus\
+Moderator is updating data files...
+Moderator is creating core engine...
+*** Library "..\plugins\libMatlabInterface" did not open.
+*** Library "..\plugins\libFminconOptimizer" did not open.
+*** Library "..\plugins\proprietary\libCsaltInterface" did not open.
+*** Library "..\plugins\proprietary\libEMTGModels" did not open.
+*** Library "..\plugins\proprietary\libMarsGRAM" did not open.
+*** Library "..\plugins\proprietary\libMsise86" did not open.
+*** Library "..\plugins\proprietary\libNRLMsise00" did not open.
+*** Library "..\plugins\proprietary\libSNOptimizer" did not open.
+*** Library "..\plugins\proprietary\libVF13Optimizer" did not open.
+*** Library "..\plugins\libOpenFramesInterface" did not open.
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+Setting nutation file to D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\planetary_coeff\NUTATION.DAT
+Setting leap seconds file to D:\GMAT\gmat-src\GMAT-r2020a2\GMAT-R2020a\GMAT-R2020a-Windows-x64\bin\..\data\time\tai-utc.dat
+2020-12-23 20:34:45 GMAT Moderator successfully created core engine
+Successfully set Planetary Source to use: DE405
+Successfully set Planetary Source to use: DE405
+2020-12-23 20:34:45 GMAT GUI successfully launched.
+*** Error loading "libMatlabInterface": GMAT could not load the MATLAB interface. Please check that MATLAB is installed and configured correctly.  See the User Guide for instructions, or disable the appropriate PLUGIN line in bin/gmat_startup_file.txt to remove this error.
+*** Error loading "libFminconOptimizer": Either libMatlabInterface could not load or is disabled, or the MATLAB Optimization Toolbox is not available.  Disable the appropriate PLUGIN line in bin/gmat_startup_file.txt to remove this error.
+*** Unable to load the dynamic library "..\plugins\proprietary\libCsaltInterface"
+*** Unable to load the dynamic library "..\plugins\proprietary\libEMTGModels"
+*** Unable to load the dynamic library "..\plugins\proprietary\libMarsGRAM"
+*** Unable to load the dynamic library "..\plugins\proprietary\libMsise86"
+*** Unable to load the dynamic library "..\plugins\proprietary\libNRLMsise00"
+*** Unable to load the dynamic library "..\plugins\proprietary\libSNOptimizer"
+*** Unable to load the dynamic library "..\plugins\proprietary\libVF13Optimizer"
+*** Unable to load the dynamic library "..\plugins\libOpenFramesInterface"
+Moderator is deleting core engine...
+2020-12-23 20:34:49 GMAT GUI exiting.
