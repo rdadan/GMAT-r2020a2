@@ -51,7 +51,8 @@
 #include "GmatGlobal.hpp"
 #include <sstream>
 #include <wx/config.h>
-
+#include "FileUtil.hpp"  
+//#include <Python.h>  
 //#define DEBUG_ORBIT_PANEL
 //#define DEBUG_ORBIT_PANEL_LOAD
 //#define DEBUG_ORBIT_PANEL_CONVERT
@@ -70,6 +71,7 @@ BEGIN_EVENT_TABLE( OrbitPanel, wxPanel)
    EVT_COMBOBOX(ID_COMBOBOX, OrbitPanel::OnComboBoxChange)
    EVT_TEXT(ID_TEXTCTRL, OrbitPanel::OnTextChange)
    EVT_BUTTON(ID_BUTTON, OrbitPanel::OnButton)
+   EVT_BUTTON(ID_BROWSE_BUTTON, OrbitPanel::BroswerTLE)
 END_EVENT_TABLE()
 
 //------------------------------
@@ -556,7 +558,7 @@ void OrbitPanel::Create()
    
    // static box for the orbit def and elements
    wxStaticBoxSizer *orbitDefSizer =
-      new wxStaticBoxSizer(wxVERTICAL, this, "");
+      new wxStaticBoxSizer(wxVERTICAL, this, "Options");
    wxStaticBoxSizer *elementSizer =
       new wxStaticBoxSizer(wxVERTICAL, this, "Elements");
    
@@ -613,7 +615,7 @@ void OrbitPanel::Create()
       ( this, ID_COMBOBOX, wxT(""), wxDefaultPosition, wxSize(epochWidth,-1),
         emptyList, wxCB_DROPDOWN | wxCB_READONLY);
    stateTypeComboBox->SetToolTip(pConfig->Read(_T("StateTypeHint")));
-   
+
    //-----------------------------------------------------------------
    //  anomaly 
    //-----------------------------------------------------------------
@@ -627,6 +629,18 @@ void OrbitPanel::Create()
         emptyList, wxCB_DROPDOWN | wxCB_READONLY );
    anomalyComboBox->SetToolTip(pConfig->Read(_T("AnomalyHint")));
    
+   // tle----------------
+   wxStaticBox* filenameBox = new wxStaticBox(this, ID_STATIC_ELEMENT, wxString("Import TLE"));
+   wxStaticBoxSizer* filenameSizer = new wxStaticBoxSizer(filenameBox, wxVERTICAL);
+   wxFlexGridSizer* flexFileSizer = new wxFlexGridSizer(1, 2, bsize, bsize);
+   modelTextCtrl = new wxTextCtrl(this, ID_MODELFILE_TEXT, wxT(""), wxDefaultPosition, wxSize(180, -1), wxTE_PROCESS_ENTER);
+   wxButton* browseButton = new wxButton(this, ID_BROWSE_BUTTON, wxT(" Browse"));
+   browseButton->SetToolTip(wxT("Find a model file to attach to the spacecraft"));
+
+   flexFileSizer->Add(modelTextCtrl, 0, wxALIGN_LEFT | wxALL, bsize);
+   flexFileSizer->Add(browseButton, 0, wxALIGN_LEFT | wxALL, bsize);
+   filenameSizer->Add(flexFileSizer, 0, wxALIGN_LEFT | wxALL, bsize);
+
    // add to epoch sizer
    epochSizer->AddGrowableCol( 1 );
    epochSizer->Add( epochFormatStaticText, 0, wxALIGN_LEFT | wxALL, bsize );
@@ -643,7 +657,8 @@ void OrbitPanel::Create()
    
    epochSizer->Add( anomalyStaticText, 0, wxALIGN_LEFT | wxALL, bsize );
    epochSizer->Add( anomalyComboBox, 0, wxGROW|wxALIGN_LEFT | wxALL, bsize );
-   
+   epochSizer->Add( filenameSizer, 0, wxGROW | wxALIGN_CENTER, bsize);
+
    // wcs 2010.01.27 remove the Anomaly combo box for now, per S. Hughes
    anomalyStaticText->Show(false);
    anomalyComboBox->Show(false);
@@ -651,6 +666,8 @@ void OrbitPanel::Create()
    // panel that has the labels and text fields for the elements
    // adds default descriptors/labels
    AddElements(this);
+
+   //
    orbitDefSizer->Add( epochSizer, 1, wxGROW|wxALIGN_CENTER|wxALL, bsize );
    elementSizer->Add( elementsPanel, 1, wxGROW|wxALIGN_CENTER|wxALL, bsize);
 
@@ -668,6 +685,7 @@ void OrbitPanel::Create()
 
    gg           = GmatGlobal::Instance();
    errMsgFormat = theSpacecraft->GetErrorMessageFormat();
+
 
 }
 
@@ -1895,9 +1913,11 @@ bool OrbitPanel::CheckState(Rvector6 &outState)
    #endif
    
    // Get state string values from the TextCtrl
-   for (int i=0; i<6; i++)
-      mElementStrs[i] = textCtrl[i]->GetValue();
-   
+   // six elements
+   for (int i = 0; i < 6; i++)
+   {
+	   mElementStrs[i] = textCtrl[i]->GetValue();
+   }
    #ifdef DEBUG_ORBIT_PANEL_CHECKSTATE
    MessageInterface::ShowMessage
       ("   mElementStrs = %s %s %s %s %s %s\n", mElementStrs[0].c_str(), mElementStrs[1].c_str(),
@@ -3428,4 +3448,80 @@ Real OrbitPanel::GetOriginData(GmatBase *fromObject, const std::string &whichDat
 
    }
    return result;
+}
+/**
+ * This function occurs when the Browse button is pushed by the user.
+ * It opens up a file dialog that allows the user to select a model.
+ */
+void OrbitPanel::BroswerTLE(wxCommandEvent& event)
+{
+    wxString filename, path;
+    wxFileDialog fileDialog(this, wxT("Please select a TLE file."), modelPath, wxEmptyString,
+        wxT("tle files (*)|*"), gmatFD_OPEN);
+
+    // If it succeeded...
+    if (fileDialog.ShowModal() == wxID_OK)
+    {
+        // Load the model indicated by the path
+        path = fileDialog.GetPath();
+
+#ifdef DEBUG_NEW_MODEL
+        MessageInterface::ShowMessage
+        ("VisualModelPanel::OnBrowseButton() New model path = '%s'\n", path.c_str());
+#endif
+        if (GmatFileUtil::DoesFileExist(path.c_str()))
+        {
+            modelTextCtrl->SetValue(path);
+            // Save to cloned base spacecraft
+            theSpacecraft->SetStringParameter("ModelFile", path.c_str());
+            // Auto scale model so that model can be shown
+            dataChanged = true;
+            theScPanel->EnableUpdate(true);
+			/*wxCommandEvent event;
+			event.SetEventObject(stateTypeComboBox);
+			OrbitPanel::OnComboBoxChange(event);*/ 
+           // PyTransTLEtoGmat();
+        }
+        else
+        {
+            MessageInterface::ShowMessage
+            ("*** WARNING *** The model file '%s' does not exist. Please check the path.\n",
+                path.WX_TO_C_STRING);
+            return;
+        }
+    }
+}
+void OrbitPanel::PyTransTLEtoGmat()
+{
+	//Py_Initialize();
+
+	//// check Py_IsInitialized
+	//if (!Py_IsInitialized()) 
+ //   {
+	//	return;
+	//}
+	//
+	//PyRun_SimpleString("import sys");
+	//PyRun_SimpleString("print('---import sys---')");
+	//// add current path
+	//PyRun_SimpleString("sys.path.append('./')");
+	//// output path
+	//PyRun_SimpleString("import os");
+ //   PyRun_SimpleString("print('pwd:', os.getcwd())");
+
+
+	//PyObject* pName, * pModule, * pDict, * pFunc, * pArgs;
+
+	//// TLE2Keplerian.py
+	//pName = PyUnicode_FromString("TLE2Keplerian");
+	//pModule = PyImport_Import(pName);
+	//if (!pModule) {
+	//	printf("can't find pytest.py");
+	//	getchar();
+	//	return;
+	//}
+	//pDict = PyModule_GetDict(pModule);
+	//if (!pDict) {
+	//	return;
+	//}
 }

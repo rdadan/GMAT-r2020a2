@@ -90,7 +90,7 @@ class DecoratedTree : public wxTreeCtrl
                  const wxPoint& pos = wxDefaultPosition,
                  const wxSize& size = wxDefaultSize,
                  long style = wxTR_HAS_BUTTONS | wxTR_LINES_AT_ROOT |
-                              wxTR_HIDE_ROOT | wxTR_EXTENDED,
+                              wxTR_HIDE_ROOT ,//| wxTR_EXTENDED
                  const wxValidator& validator = wxDefaultValidator,
                  const wxString& name = "listCtrl");
 		~DecoratedTree();

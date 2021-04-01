@@ -116,7 +116,14 @@ GroundTrackPlot::GroundTrackPlot(const std::string &name)
       ("GroundTrackPlot::GroundTrackPlot() constructor leaving\n");
    #endif
 }
-
+MapTrackPlot::MapTrackPlot(const std::string& name)
+	: OrbitPlot("MapTrackPlot", name)
+{
+	// GmatBase data
+	//parameterCount = GroundTrackPlotParamCount;
+	objectTypeNames.push_back("MapTrackPlot");
+  
+}
 
 //------------------------------------------------------------------------------
 // GroundTrackPlot(const GroundTrackPlot &plot)
@@ -177,7 +184,9 @@ GroundTrackPlot::~GroundTrackPlot()
 {
 }
 
-
+MapTrackPlot::~MapTrackPlot()
+{
+}
 //----------------------------------
 // inherited methods from Subscriber
 //----------------------------------

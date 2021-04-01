@@ -928,6 +928,7 @@ void ResourceTree::UpdateGuiItem(GmatTree::ItemType itemType)
    case GmatTree::XY_PLOT:
    case GmatTree::ORBIT_VIEW:
    case GmatTree::GROUND_TRACK_PLOT:
+   case GmatTree::MAP_TRACK_PLOT:
    case GmatTree::EPHEMERIS_FILE:
       theGuiManager->UpdateSubscriber();
       break;
@@ -1421,6 +1422,11 @@ void ResourceTree::GetItemTypeAndIcon(GmatBase *obj,
    {
       itemType = GmatTree::GROUND_TRACK_PLOT;
       itemIcon = GmatTree::RESOURCE_ICON_GROUND_TRACK_PLOT;
+   }
+   else if (obj->IsOfType("MapTrackPlot"))
+   {
+	   itemType = GmatTree::MAP_TRACK_PLOT;
+	   itemIcon = GmatTree::RESOURCE_ICON_MAP_TRACK_PLOT;
    }
    else if (obj->IsOfType("DynamicDataDisplay"))
    {
@@ -2725,6 +2731,7 @@ void ResourceTree::OnBeginLabelEdit(wxTreeEvent &event)
                          (itemType == GmatTree::XY_PLOT)          ||
                          (itemType == GmatTree::ORBIT_VIEW)       ||
                          (itemType == GmatTree::GROUND_TRACK_PLOT)||
+                         (itemType == GmatTree::MAP_TRACK_PLOT)||
                          (itemType == GmatTree::EPHEMERIS_FILE)   ||
                          (itemType == GmatTree::INTERFACE));
 
@@ -2938,7 +2945,8 @@ void ResourceTree::AddIcons()
    theGuiManager->LoadIcon("rt_OrbitView", bitmapType, &bitmaps[++index], rt_OrbitView_xpm);
    theGuiManager->LoadIcon("rt_XYPlot", bitmapType, &bitmaps[++index], rt_XYPlot_xpm);
    theGuiManager->LoadIcon("rt_GroundTrackPlot", bitmapType, &bitmaps[++index], rt_GroundTrackPlot_xpm);
-   
+   theGuiManager->LoadIcon("rt_MapTrackPlot", bitmapType, &bitmaps[++index], rt_GroundTrackPlot_xpm);
+
    theGuiManager->LoadIcon("rt_Matlab", bitmapType, &bitmaps[++index], rt_Matlab_xpm);
    theGuiManager->LoadIcon("rt_MatlabServer", bitmapType, &bitmaps[++index], rt_MatlabServer_xpm);
    theGuiManager->LoadIcon("rt_Script", bitmapType, &bitmaps[++index], rt_Script_xpm);
@@ -6011,7 +6019,8 @@ UnsignedInt ResourceTree::GetObjectType(GmatTree::ItemType itemType)
    case GmatTree::REPORT_FILE:
    case GmatTree::XY_PLOT:
    case GmatTree::ORBIT_VIEW:
-   case GmatTree::GROUND_TRACK_PLOT:      
+   case GmatTree::GROUND_TRACK_PLOT:    
+   case GmatTree::MAP_TRACK_PLOT:
    case GmatTree::EPHEMERIS_FILE:
    case GmatTree::DYNAMIC_DATA_DISPLAY:
    case GmatTree::SUBSCRIBER:       // Added support for plugin Subscribers
@@ -6108,6 +6117,7 @@ wxTreeItemId ResourceTree::GetTreeItemId(GmatTree::ItemType itemType)
    case GmatTree::XY_PLOT:
    case GmatTree::ORBIT_VIEW:
    case GmatTree::GROUND_TRACK_PLOT:      
+   case GmatTree::MAP_TRACK_PLOT:
    case GmatTree::EPHEMERIS_FILE:
    case GmatTree::DYNAMIC_DATA_DISPLAY:
       return mSubscriberItem;

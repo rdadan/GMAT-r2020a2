@@ -4462,7 +4462,10 @@ GmatMainFrame::CreateNewResource(const wxString &title, const wxString &name,
       //sizer->Add(new GmatBaseSetupPanel(scrolledWin, name, true), 0, wxGROW|wxALL, 0);
       // Try custom panel (LOJ: 2013.09.17)
       sizer->Add(new GroundTrackPlotPanel(scrolledWin, name), 0, wxGROW|wxALL, 0);
-     break;
+      break;
+   case GmatTree::MAP_TRACK_PLOT:
+	   sizer->Add(new MapTrackPlotPanel(scrolledWin, name), 0, wxGROW | wxALL, 0);
+	  break;
    case GmatTree::DYNAMIC_DATA_DISPLAY:
       sizer->Add(new DynamicDataDisplaySetupPanel(scrolledWin, name), 0, wxGROW | wxALL, 0);
       break;

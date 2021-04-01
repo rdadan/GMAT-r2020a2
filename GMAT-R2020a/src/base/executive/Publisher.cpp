@@ -338,6 +338,9 @@ bool Publisher::Publish(GmatBase *provider, Integer id, Real *data, Integer coun
             MessageInterface::ShowMessage("   %d: %12lf\n", i, data[i]);
          #endif
          sprintf(stream, "%s%16le", stream, data[i]);
+        // printf("i: %d, stream: %s \n", i, stream);
+        
+
          if (i < count - 1)
             strcat(stream, ", ");
          else
@@ -345,8 +348,8 @@ bool Publisher::Publish(GmatBase *provider, Integer id, Real *data, Integer coun
          #ifdef DEBUG_PUBLISHER_BUFFERS
                MessageInterface::ShowMessage("   used %d\n", strlen(stream));
          #endif
-      }
-   
+	  }
+	  MessageInterface::ShowMessage("stream: %s\n", stream);
       #ifdef DEBUG_PUBLISHER_BUFFERS
          MessageInterface::ShowMessage("   Data:  %s\n", stream);
       #endif

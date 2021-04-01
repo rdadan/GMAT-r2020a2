@@ -96,6 +96,7 @@ namespace GmatTree
       RESOURCE_ICON_ORBIT_VIEW,
       RESOURCE_ICON_XY_PLOT,
       RESOURCE_ICON_GROUND_TRACK_PLOT,
+      RESOURCE_ICON_MAP_TRACK_PLOT,
       
       RESOURCE_ICON_MATLAB,
       RESOURCE_ICON_MATLAB_SERVER,
@@ -285,6 +286,7 @@ namespace GmatTree
       GROUND_TRACK_PLOT,
       EPHEMERIS_FILE,
       DYNAMIC_DATA_DISPLAY,
+      MAP_TRACK_PLOT,
       
       VARIABLE = 41600,
       ARRAY,
@@ -366,6 +368,7 @@ namespace GmatTree
       GROUND_TRACK_PLOTS_FOLDER,
       XY_PLOTS_FOLDER,
       EVENTS_FOLDER,
+      MAP_VIEWS_FOLDER,
 
       // for output
       BEGIN_OF_OUTPUT = 46000,

@@ -99,6 +99,8 @@ Subscriber* SubscriberFactory::CreateSubscriber(const std::string &ofType,
       return new OrbitView(withName);
    else if (ofType == "GroundTrackPlot")
       return new GroundTrackPlot(withName);
+   else if (ofType == "MapTrackPlot")
+	   return new MapTrackPlot(withName);
    else if (ofType == "DynamicDataDisplay")
       return new DynamicDataDisplay(withName);
 
@@ -136,6 +138,7 @@ Factory(Gmat::SUBSCRIBER)
       creatables.push_back("Enhanced3DView");
       creatables.push_back("OrbitView");
       creatables.push_back("GroundTrackPlot");
+      creatables.push_back("MapTrackPlot");
       creatables.push_back("OwnedPlot");
       creatables.push_back("DynamicDataDisplay");
 //      creatables.push_back("LocatorView");

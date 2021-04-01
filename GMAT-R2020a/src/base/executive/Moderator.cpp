@@ -7204,7 +7204,7 @@ Integer Moderator::RunMission(Integer sandboxNum)
    // Set to 1 to always run the mission and get the sandbox error message
    // Changed this code while looking at Bug 1532 (LOJ: 2009.11.13)
    isRunReady = true;
-   currentSandboxNumber = sandboxNum;
+   currentSandboxNumber = 2;//sandboxNum;
    
    #if DEBUG_CONFIG
    MessageInterface::ShowMessage
@@ -9218,7 +9218,7 @@ void Moderator::CreateDefaultMission()
       // OrbitView
       GetDefaultSubscriber("OrbitView");
       GetDefaultSubscriber("GroundTrackPlot");
-      
+      GetDefaultSubscriber("MapTrackPlot");
       #if DEBUG_DEFAULT_MISSION
       MessageInterface::ShowMessage("-->default Subscribers created\n");
       #endif
@@ -10162,7 +10162,8 @@ Subscriber* Moderator::GetDefaultSubscriber(const std::string &type, bool addObj
    else if (type == "OrbitView")
    {
       // create default OrbitView
-      sub = CreateSubscriber("OrbitView", "DefaultOrbitView");
+      sub = CreateSubscriber("OrbitView", "DefaultOrbitView-");
+     // sub = CreateSubscriber("OrbitView", "DefaultOrbitView2");
       sub->SetStringParameter("Add", "DefaultSC");
       sub->SetStringParameter("Add", "Earth");
       sub->SetStringParameter("CoordinateSystem", "EarthMJ2000Eq");
@@ -10172,10 +10173,18 @@ Subscriber* Moderator::GetDefaultSubscriber(const std::string &type, bool addObj
    else if (type == "GroundTrackPlot")
    {
       // create default GroundTrackPlot
-      sub = CreateSubscriber("GroundTrackPlot", "DefaultGroundTrackPlot");
+      sub = CreateSubscriber("GroundTrackPlot", "DefaultGroundTrackPlot22222");
       sub->SetStringParameter("Add", "DefaultSC");
       sub->SetStringParameter("Add", "Earth");
       sub->Activate(true);
+   }
+   else if (type == "MapTrackPlot")
+   {
+	   // create default GroundTrackPlot
+	   sub = CreateSubscriber("MapTrackPlot", "DefaultMapTrackPlot");
+	   sub->SetStringParameter("Add", "DefaultSC");
+	   sub->SetStringParameter("Add", "Earth");
+	   sub->Activate(true);
    }
    else if (type == "XYPlot")
    {
@@ -10232,6 +10241,7 @@ Subscriber* Moderator::GetDefaultSubscriber(const std::string &type, bool addObj
       ("Moderator::GetDefaultSubscriber() returning, <%p>'%s'\n", sub,
        sub->GetName().c_str());
    #endif
+  // GetDefaultSubscriber2(type, addObjects, createIfNoneFound);
    return sub;
 }
 

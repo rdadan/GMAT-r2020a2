@@ -54,7 +54,6 @@
 #include "bitmaps/FasterAnimation.xpm"
 #include "bitmaps/SlowerAnimation.xpm"
 #include "bitmaps/screenshot.xpm"
-
 //#define DEBUG_CREATE_TOOLBAR
 //#define DEBUG_LOAD_ICON
 //#define DEBUG_SYNC_STATUS

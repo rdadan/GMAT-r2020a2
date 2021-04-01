@@ -45,6 +45,7 @@
 #include "SpicePanel.hpp"
 #include "GuiInterpreter.hpp"
 #include "VisualModelPanel.hpp"
+#include "TransTlePanel.hpp"
 
 #include "gmatdefs.hpp"
 #include "Spacecraft.hpp"
@@ -104,7 +105,7 @@ private:
    VisualModelPanel    *theVisualModelPanel;
    SpicePanel          *theSpicePanel;
    PowerSystemPanel    *thePwrSysPanel;
-   
+   TransTlePanel       *theTransTlePanel;
    // IDs for the controls and the menu commands
    enum
    {

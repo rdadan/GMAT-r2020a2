@@ -74,7 +74,6 @@ MissionTreeToolBar::MissionTreeToolBar(wxWindow *parent, long style,
 {
    mParent = parent;   
    mMissionTree = NULL;
-   
    CreateMissionTreeToolBar();
 }
 

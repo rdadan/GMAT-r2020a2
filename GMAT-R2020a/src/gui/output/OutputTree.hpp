@@ -60,6 +60,7 @@ private:
    wxTreeItemId mGroundTrackItem;
    wxTreeItemId mXyPlotItem;
    wxTreeItemId mEventsItem;
+   wxTreeItemId mMapItem;
    
    void AddDefaultResources();
    wxTreeItemId FindItem(wxTreeItemId parentId, const wxString &name);

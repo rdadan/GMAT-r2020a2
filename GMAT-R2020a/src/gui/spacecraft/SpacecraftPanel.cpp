@@ -81,7 +81,7 @@ SpacecraftPanel::SpacecraftPanel(wxWindow *parent, const wxString &scName)
    theVisualModelPanel = NULL;
    theSpicePanel = NULL;
    thePwrSysPanel = NULL;
-
+   theTransTlePanel = NULL;
    theSpacecraft =
       (Spacecraft*)theGuiInterpreter->GetConfiguredObject(std::string(scName.c_str()));
    
@@ -223,7 +223,12 @@ void SpacecraftPanel::Create()
    #if DEBUG_SPACECRAFT_PANEL
    MessageInterface::ShowMessage("   VisualModelPanel created\n");
    #endif
-   
+
+   theTransTlePanel = new TransTlePanel(this, spacecraftNotebook, currentSpacecraft);
+#if DEBUG_SPACECRAFT_PANEL
+   MessageInterface::ShowMessage("   TransTlePanel created\n");
+#endif
+
    // Adding panels to notebook
    spacecraftNotebook->AddPage( theOrbitPanel, wxT("Orbit") );
    spacecraftNotebook->AddPage( theAttitudePanel, wxT("Attitude") );
@@ -237,9 +242,10 @@ void SpacecraftPanel::Create()
    actuatorNotebook->AddPage( theThrusterPanel, wxT("Thruster") );
    spacecraftNotebook->AddPage( actuatorNotebook, wxT("Actuators") );
    spacecraftNotebook->AddPage( theVisualModelPanel , wxT("Visualization") );
-
+   spacecraftNotebook->AddPage(theTransTlePanel, wxT("TransTle"));
    theMiddleSizer->Add(spacecraftNotebook, 1, wxGROW, 5);
    
+
    #if DEBUG_SPACECRAFT_PANEL
    MessageInterface::ShowMessage("SpacecraftPanel::Create() leaving\n");
    #endif
@@ -343,6 +349,12 @@ void SpacecraftPanel::SaveData()
    {
       theVisualModelPanel->SaveData();
       canClose = canClose && theVisualModelPanel->CanClosePanel();
+   }
+
+   if (theTransTlePanel->IsDataChanged())
+   {
+       theTransTlePanel->SaveData();
+	   canClose = canClose && theTransTlePanel->CanClosePanel();
    }
 
    if (!canClose)

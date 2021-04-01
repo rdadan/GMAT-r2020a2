@@ -151,4 +151,13 @@ private:
    static const std::string FOOT_PRINT_OPTION_TEXT[FootPrintOptionCount];
 };
 
+class MapTrackPlot:public OrbitPlot
+{
+public:
+    MapTrackPlot(const std::string& name);
+  //  MapTrackPlot(const MapTrackPlot& plot);
+   // MapTrackPlot& operator=(const MapTrackPlot& plot);
+	virtual ~MapTrackPlot();
+
+};
 #endif

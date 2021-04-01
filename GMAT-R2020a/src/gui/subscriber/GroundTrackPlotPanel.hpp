@@ -55,7 +55,6 @@ public:
                                   const wxString &newName);
 protected:
    GroundTrackPlot *mGroundTrackPlot;
-   
    bool mHasIntegerDataChanged;
    bool mHasRealDataChanged;
    bool mHasDataOptionChanged;
@@ -141,3 +140,17 @@ private:
 #endif
 
 
+class MapTrackPlotPanel : public GmatPanel
+{
+public:
+    MapTrackPlotPanel(wxWindow* parent, const wxString& subscriberName);
+    ~MapTrackPlotPanel();
+
+protected:
+    MapTrackPlot* mMapTrackPlot;
+	// methods inherited from GmatPanel
+	virtual void Create();
+    void web(wxWindow* parent);
+	virtual void LoadData();
+	virtual void SaveData();
+};

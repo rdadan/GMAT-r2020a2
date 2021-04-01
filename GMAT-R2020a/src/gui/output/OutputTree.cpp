@@ -432,7 +432,14 @@ void OutputTree::AddDefaultResources()
    
    SetItemImage(mGroundTrackItem, GmatTree::OUTPUT_ICON_OPENFOLDER,
                 wxTreeItemIcon_Expanded);
-   
+   //map
+   mMapItem = AppendItem(output, wxT("Map Plots"), GmatTree::OUTPUT_ICON_CLOSEDFOLDER, -1,
+	   new GmatTreeItemData(wxT("Map Plots"),
+		   GmatTree::MAP_VIEWS_FOLDER));
+
+   SetItemImage(mMapItem, GmatTree::OUTPUT_ICON_OPENFOLDER,
+	   wxTreeItemIcon_Expanded);
+
    //----- XY Plots
    mXyPlotItem =
       AppendItem(output, wxT("XY Plots"), GmatTree::OUTPUT_ICON_CLOSEDFOLDER, -1,

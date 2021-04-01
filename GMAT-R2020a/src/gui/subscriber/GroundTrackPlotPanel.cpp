@@ -40,7 +40,9 @@
 #include "bitmaps/OpenFolder.xpm"   // for browse button bitmap
 #include "StringUtil.hpp"
 #include "MessageInterface.hpp"
-
+#include "wx\windowid.h "
+#include "wx\window.h "
+#include "wx\webview.h" 
 //#define DEBUG_PANEL 1
 //#define DEBUG_PANEL_CREATE 1
 //#define DEBUG_PANEL_COLOR 1
@@ -111,6 +113,30 @@ GroundTrackPlotPanel::GroundTrackPlotPanel(wxWindow *parent,
    theGuiManager->AddToResourceUpdateListeners(this);
 }
 
+MapTrackPlotPanel::MapTrackPlotPanel(wxWindow* parent,
+	const wxString& subscriberName)
+	: GmatPanel(parent)
+{
+#if DEBUG_PANEL
+	MessageInterface::ShowMessage("GroundTrackPlotPanel() entering...\n");
+	MessageInterface::ShowMessage("GroundTrackPlotPanel() subscriberName = " +
+		std::string(subscriberName.c_str()) + "\n");
+#endif
+
+	Subscriber* subscriber = (Subscriber*)
+		theGuiInterpreter->GetConfiguredObject(subscriberName.c_str());
+
+	mMapTrackPlot = (MapTrackPlot*)subscriber;
+
+	// Set the pointer for the "Show Script" button
+	mObject = mMapTrackPlot;
+
+	//InitializeData();
+	Create();
+	Show();
+	theGuiManager->AddToResourceUpdateListeners(this);
+}
+
 
 //------------------------------------------------------------------------------
 // ~GroundTrackPlotPanel()
@@ -126,7 +152,10 @@ GroundTrackPlotPanel::~GroundTrackPlotPanel()
    theGuiManager->UnregisterCheckListBox("SpacePoint", mObjectCheckListBox);
    theGuiManager->RemoveFromResourceUpdateListeners(this);
 }
-
+MapTrackPlotPanel::~MapTrackPlotPanel()
+{
+    theGuiManager->RemoveFromResourceUpdateListeners(this);
+}
 
 //------------------------------------------------------------------------------
 // virtual bool PrepareObjectNameChange()
@@ -434,8 +463,21 @@ void GroundTrackPlotPanel::Create()
    MessageInterface::ShowMessage("GroundTrackPlotPanel::Create() exiting...\n");
    #endif
 }
+void MapTrackPlotPanel::Create()
+{
+	wxWebView* webView = wxWebView::New(this, wxID_ANY, wxT("https://map.baidu.com"));
+	wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
+	sizer->Add(webView, 1, wxALL | wxEXPAND, 0);
+    this->SetSizer(sizer);
+	this->Layout();
+}
+void MapTrackPlotPanel::LoadData()
+{
+}
 
-
+void MapTrackPlotPanel::SaveData()
+{
+}
 //------------------------------------------------------------------------------
 // virtual void LoadData()
 //------------------------------------------------------------------------------

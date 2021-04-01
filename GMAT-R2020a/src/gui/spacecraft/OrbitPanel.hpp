@@ -38,7 +38,7 @@
 #include "GuiItemManager.hpp"
 #include "GmatAppData.hpp"
 #include "GmatPanel.hpp"
-
+#include "wx\webview.h" 
 #include "Spacecraft.hpp"
 #include "TimeSystemConverter.hpp"
 #include "CoordinateConverter.hpp"
@@ -88,7 +88,7 @@ private:
    TimeSystemConverter *theTimeConverter;
    
    Real mEpoch;
-   
+
    bool mIsEpochFormatChanged;
    bool mIsCoordSysChanged;
    bool mIsStateTypeChanged;
@@ -163,6 +163,9 @@ private:
    
    Real GetOriginData(GmatBase *fromObject, const std::string &whichData = "mu");
 
+   void BroswerTLE(wxCommandEvent& event);
+   void PyTransTLEtoGmat();
+   wxString modelPath;
    GmatPanel *theScPanel;
    
    wxStaticText *description1;
@@ -185,23 +188,26 @@ private:
 
    wxTextCtrl *textCtrl[6];   
    wxTextCtrl *epochValue;
-
+   wxTextCtrl *tansTle;
    wxPanel *elementsPanel;
 
    wxComboBox *anomalyComboBox;
    wxComboBox *mCoordSysComboBox;
    wxComboBox *epochFormatComboBox;
    wxComboBox *stateTypeComboBox;
-
+   // Text for loading the model
+   wxTextCtrl* modelTextCtrl;
    // IDs for the controls and the menu commands
    enum
    {     
       ID_TEXT = 30200,
       ID_TEXTCTRL,
       ID_COMBOBOX,
-	   ID_BUTTON,
+	  ID_BUTTON,
         
-      ID_STATIC_ELEMENT     
+      ID_STATIC_ELEMENT,
+      ID_MODELFILE_TEXT,
+      ID_BROWSE_BUTTON
    };
 };
 #endif
